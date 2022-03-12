@@ -19,7 +19,7 @@ pipeline {
         stage('checkout') {
             steps {
                  script{
-                        //dir("terraform")
+                        dir(".")
                         {
                             git "https://github.com/uber94/0422-project.git"
                         }
